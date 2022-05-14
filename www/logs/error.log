@@ -1,0 +1,122 @@
+2022/05/13 21:28:22 [error] 8#8: *7 FastCGI sent in stderr: "PHP message: PHP Fatal error:  Class common\models\Category contains 4 abstract methods and must therefore be declared abstract or implement the remaining methods (yii\web\IdentityInterface::findIdentity, yii\web\IdentityInterface::findIdentityByAccessToken, yii\web\IdentityInterface::getAuthKey, ...) in /var/www/common/models/Category.php on line 18" while reading response header from upstream, client: 172.21.0.1, server: api.example.loc, request: "GET /category HTTP/1.1", upstream: "fastcgi://172.21.0.3:9000", host: "api.example.loc"
+2022/05/13 21:29:53 [error] 8#8: *7 FastCGI sent in stderr: "PHP message: PHP Parse error:  syntax error, unexpected ''PUT,PATCH <controller>/<id:\d' (T_CONSTANT_ENCAPSED_STRING), expecting ']' in /var/www/api/config/main.php on line 69" while reading response header from upstream, client: 172.21.0.1, server: api.example.loc, request: "GET /category/1 HTTP/1.1", upstream: "fastcgi://172.21.0.3:9000", host: "api.example.loc"
+2022/05/13 23:30:54 [error] 8#8: *131 FastCGI sent in stderr: "PHP message: An Error occurred while handling another error:
+yii\web\HeadersAlreadySentException: Headers already sent in /var/www/api/controllers/CategoryContr" while reading upstream, client: 172.21.0.1, server: api.example.loc, request: "PUT /categories/1?expand=uproducts HTTP/1.1", upstream: "fastcgi://172.21.0.3:9000", host: "api.example.loc"
+2022/05/13 23:30:54 [error] 8#8: *131 FastCGI sent in stderr: "oller.php on line 32. in /var/www/vendor/yiisoft/yii2/web/Response.php:368
+Stack trace:
+#0 /var/www/vendor/yiisoft/yii2/web/Response.php(341): yii\web\Response->sendHeaders()
+#1 /var/www/vendor/yiisoft/yii2/web/ErrorHandler.php(136): yii\web\Response->send()
+#2 /var/www/vendor/yiisoft/yii2/base/ErrorHandler.php(135): yii\web\ErrorHandler->renderException(Object(yii\web\HeadersAlreadySentException))
+#3 [internal function]: yii\base\ErrorHandler->handleException(Object(yii\web\HeadersAlreadySentException))
+#4 {main}
+Previous exception:
+yii\web\HeadersAlreadySentException: Headers already sent in /var/www/api/controllers/CategoryController.php on line 32. in /var/www/vendor/yiisoft/yii2/web/Response.php:368
+Stack trace:
+#0 /var/www/vendor/yiisoft/yii2/web/Response.php(341): yii\web\Response->sendHeaders()
+#1 /var/www/vendor/yiisoft/yii2/base/Applicati" while reading upstream, client: 172.21.0.1, server: api.example.loc, request: "PUT /categories/1?expand=uproducts HTTP/1.1", upstream: "fastcgi://172.21.0.3:9000", host: "api.example.loc"
+2022/05/13 23:31:22 [error] 8#8: *131 FastCGI sent in stderr: "PHP message: An Error occurred while handling another error:
+yii\web\HeadersAlreadySentException: Headers already sent in /var/www/api/controllers/CategoryController.php on line 34. in /var/www/vendor/yiisoft/yii2/web/Response.php:368
+Stack trace:
+#0 /var/www/vendor/yiisoft/yii2/web/Response.php(341): yii\web\Response->sendHeaders()
+#1 /var/www/vendor/yiisoft/yii2/web/ErrorHandler.php(136): yii\web\Response->send()
+#2 /var/www/vendor/yiisoft/yii2/base/ErrorHandler.php(135): yii\web\ErrorHandler->renderException(Object(yii\web\HeadersAlreadySentException))
+#3 [internal function]: yii\base\ErrorHandler->handleException(Object(yii\web\HeadersAlreadySentException))
+#4 {main}
+Previous exception:
+yii\web\HeadersAlreadySentException: Headers already sent in /var/www/api/controllers/CategoryController.php on line 34. in /var/www/vendor/yiisoft/yii2/web/Response.php:368
+Stack trace:
+#0 /var/www/vendor/yiisoft/yii2/web/Response.php(341): yii\web\Response->sendHeaders()
+#1 /var/www/vendor/yiisoft/yii2/base/Applicati" while reading upstream, client: 172.21.0.1, server: api.example.loc, request: "PUT /categories/1?expand=uproducts HTTP/1.1", upstream: "fastcgi://172.21.0.3:9000", host: "api.example.loc"
+2022/05/13 23:32:15 [error] 8#8: *131 FastCGI sent in stderr: "PHP message: An Error occurred while handling another error:
+yii\web\HeadersAlreadySentException: Headers already sent in /var/www/api/controllers/CategoryController.php on line 34. in /var/www/vendor/yiisoft/yii2/web/Response.php:368
+Stack trace:
+#0 /var/www/vendor/yiisoft/yii2/web/Response.php(341): yii\web\Response->sendHeaders()
+#1 /var/www/vendor/yiisoft/yii2/web/ErrorHandler.php(136): yii\web\Response->send()
+#2 /var/www/vendor/yiisoft/yii2/base/ErrorHandler.php(135): yii\web\ErrorHandler->renderException(Object(yii\web\HeadersAlreadySentException))
+#3 [internal function]: yii\base\ErrorHandler->handleException(Object(yii\web\HeadersAlreadySentException))
+#4 {main}
+Previous exception:
+yii\web\HeadersAlreadySentException: Headers already sent in /var/www/api/controllers/CategoryController.php on line 34. in /var/www/vendor/yiisoft/yii2/web/Response.php:368
+Stack trace:
+#0 /var/www/vendor/yiisoft/yii2/web/Response.php(341): yii\web\Response->sendHeaders()
+#1 /var/www/vendor/yiisoft/yii2/base/Applicati" while reading upstream, client: 172.21.0.1, server: api.example.loc, request: "PUT /categories/1?expand=uproducts HTTP/1.1", upstream: "fastcgi://172.21.0.3:9000", host: "api.example.loc"
+2022/05/13 23:34:07 [error] 8#8: *139 FastCGI sent in stderr: "PHP message: An Error occurred while handling another error:
+yii\web\HeadersAlreadySentException: Headers already sent in /var/www/api/controllers/CategoryController.php on line 34. in /var/www/vendor/yiisoft/yii2/web/Response.php:368
+Stack trace:
+#0 /var/www/vendor/yiisoft/yii2/web/Response.php(341): yii\web\Response->sendHeaders()
+#1 /var/www/vendor/yiisoft/yii2/web/ErrorHandler.php(136): yii\web\Response->send()
+#2 /var/www/vendor/yiisoft/yii2/base/ErrorHandler.php(135): yii\web\ErrorHandler->renderException(Object(yii\web\HeadersAlreadySentException))
+#3 [internal function]: yii\base\ErrorHandler->handleException(Object(yii\web\HeadersAlreadySentException))
+#4 {main}
+Previous exception:
+yii\web\HeadersAlreadySentException: Headers already sent in /var/www/api/controllers/CategoryController.php on line 34. in /var/www/vendor/yiisoft/yii2/web/Response.php:368
+Stack trace:
+#0 /var/www/vendor/yiisoft/yii2/web/Response.php(341): yii\web\Response->sendHeaders()
+#1 /var/www/vendor/yiisoft/yii2/base/Applicati" while reading upstream, client: 172.21.0.1, server: api.example.loc, request: "PUT /categories/1?expand=uproducts HTTP/1.1", upstream: "fastcgi://172.21.0.3:9000", host: "api.example.loc"
+2022/05/13 23:35:33 [error] 8#8: *139 FastCGI sent in stderr: "PHP message: An Error occurred while handling another error:
+yii\web\HeadersAlreadySentException: Headers already sent in /var/www/api/controllers/CategoryController.php on line 35. in /var/www/vendor/yiisoft/yii2/web/Response.php:368
+Stack trace:
+#0 /var/www/vendor/yiisoft/yii2/web/Response.php(341): yii\web\Response->sendHeaders()
+#1 /var/www/vendor/yiisoft/yii2/web/ErrorHandler.php(136): yii\web\Response->send()
+#2 /var/www/vendor/yiisoft/yii2/base/ErrorHandler.php(135): yii\web\ErrorHandler->renderException(Object(yii\web\HeadersAlreadySentException))
+#3 [internal function]: yii\base\ErrorHandler->handleException(Object(yii\web\HeadersAlreadySentException))
+#4 {main}
+Previous exception:
+yii\web\HeadersAlreadySentException: Headers already sent in /var/www/api/controllers/CategoryController.php on line 35. in /var/www/vendor/yiisoft/yii2/web/Response.php:368
+Stack trace:
+#0 /var/www/vendor/yiisoft/yii2/web/Response.php(341): yii\web\Response->sendHeaders()
+#1 /var/www/vendor/yiisoft/yii2/base/Applicati" while reading upstream, client: 172.21.0.1, server: api.example.loc, request: "PUT /categories/1?expand=uproducts HTTP/1.1", upstream: "fastcgi://172.21.0.3:9000", host: "api.example.loc"
+2022/05/13 23:37:01 [error] 8#8: *143 FastCGI sent in stderr: "PHP message: An Error occurred while handling another error:
+yii\web\HeadersAlreadySentException: Headers already sent in /var/www/api/controllers/CategoryController.php on line 33. in /var/www/vendor/yiisoft/yii2/web/Response.php:368
+Stack trace:
+#0 /var/www/vendor/yiisoft/yii2/web/Response.php(341): yii\web\Response->sendHeaders()
+#1 /var/www/vendor/yiisoft/yii2/web/ErrorHandler.php(136): yii\web\Response->send()
+#2 /var/www/vendor/yiisoft/yii2/base/ErrorHandler.php(135): yii\web\ErrorHandler->renderException(Object(yii\web\HeadersAlreadySentException))
+#3 [internal function]: yii\base\ErrorHandler-" while reading upstream, client: 172.21.0.1, server: api.example.loc, request: "PUT /categories/1?expand=uproducts HTTP/1.1", upstream: "fastcgi://172.21.0.3:9000", host: "api.example.loc"
+2022/05/13 23:37:01 [error] 8#8: *143 FastCGI sent in stderr: ">handleException(Object(yii\web\HeadersAlreadySentException))
+#4 {main}
+Previous exception:
+yii\web\HeadersAlreadySentException: Headers already sent in /var/www/api/controllers/CategoryController.php on line 33. in /var/www/vendor/yiisoft/yii2/web/Response.php:368
+Stack trace:
+#0 /var/www/vendor/yiisoft/yii2/web/Response.php(341): yii\web\Response->sendHeaders()
+#1 /var/www/vendor/yiisoft/yii2/base/Applicati" while reading upstream, client: 172.21.0.1, server: api.example.loc, request: "PUT /categories/1?expand=uproducts HTTP/1.1", upstream: "fastcgi://172.21.0.3:9000", host: "api.example.loc"
+2022/05/13 23:42:04 [error] 8#8: *148 FastCGI sent in stderr: "PHP message: An Error occurred while handling another error:
+yii\web\HeadersAlreadySentException: Headers already sent in /var/www/api/controllers/CategoryController.php on line 41. in /var/www/vendor/yiisoft/yii2/web/Response.php:368
+Stack trace:
+#0 /var/www/vendor/yiisoft/yii2/web/Response.php(341): yii\web\Response->sendHeaders()
+#1 /var/www/vendor/yiisoft/yii2/web/ErrorHandler.php(136): yii\web\Response->send()
+#2 /var/www/vendor/yiisoft/yii2/base/ErrorHandler.php(135): yii\web\ErrorHandler->renderException(Object(yii\web\HeadersAlreadySentException))
+#3 [internal function]: yii\base\ErrorHandler->handleException(Object(yii\web\HeadersAlreadySentException))
+#4 {main}
+Previous exception:
+yii\web\HeadersAlreadySentException: Headers already sent in /var/www/api/controllers/CategoryController.php on line 41. in /var/www/vendor/yiisoft/yii2/web/Response.php:368
+Stack trace:
+#0 /var/www/vendor/yiisoft/yii2/web/Response.php(341): yii\web\Response->sendHeaders()
+#1 /var/www/vendor/yiisoft/yii2/base/Applicati" while reading upstream, client: 172.21.0.1, server: api.example.loc, request: "PUT /categories/1?expand=uproducts HTTP/1.1", upstream: "fastcgi://172.21.0.3:9000", host: "api.example.loc"
+2022/05/13 23:51:10 [error] 8#8: *171 FastCGI sent in stderr: "PHP message: An Error occurred while handling another error:
+yii\web\HeadersAlreadySentException: Headers already sent in /var/www/api/controllers/CategoryController.php on line 31. in /var/www/vendor/yiisoft/yii2/web/Response.php:368
+Stack trace:
+#0 /var/www/vendor/yiisoft/yii2/web/Response.php(341): yii\web\Response->sendHeaders()
+#1 /var/www/vendor/yiisoft/yii2/web/ErrorHandler.php(136): yii\web\Response->send()
+#2 /var/www/vendor/yiisoft/yii2/base/ErrorHandler.php(135): yii\web\ErrorHandler->renderException(Object(yii\web\HeadersAlreadySentException))
+#3 [internal function]: yii\base\ErrorHandler->handleException(Object(yii\web\HeadersAlreadySentException))
+#4 {main}
+Previous exception:
+yii\web\HeadersAlreadySentException: Headers already sent in /var/www/api/controllers/CategoryController.php on line 31. in /var/www/vendor/yiisoft/yii2/web/Response.php:368
+Stack trace:
+#0 /var/www/vendor/yiisoft/yii2/web/Response.php(341): yii\web\Response->sendHeaders()
+#1 /var/www/vendor/yiisoft/yii2/base/Applicati" while reading upstream, client: 172.21.0.1, server: api.example.loc, request: "GET /categories/1 HTTP/1.1", upstream: "fastcgi://172.21.0.3:9000", host: "api.example.loc"
+2022/05/13 23:51:21 [error] 8#8: *171 FastCGI sent in stderr: "PHP message: An Error occurred while handling another error:
+yii\web\HeadersAlreadySentException: Headers already sent in /var/www/api/controllers/CategoryController.php on line 31. in /var/www/vendor/yiisoft/yii2/web/Response.php:368
+Stack trace:
+#0 /var/www/vendor/yiisoft/yii2/web/Response.php(341): yii\web\Response->sendHeaders()
+#1 /var/www/vendor/yiisoft/yii2/web/ErrorHandler.php(136): yii\web\Response->send()
+#2 /var/www/vendor/yiisoft/yii2/base/ErrorHandler.php(135): yii\web\ErrorHandler->renderException(Object(yii\web\HeadersAlreadySentException))
+#3 [internal function]: yii\base\ErrorHandler->handleException(Object(yii\web\HeadersAlreadySentException))
+#4 {main}
+Previous exception:
+yii\web\HeadersAlreadySentException: Headers already sent in /var/www/api/controllers/CategoryController.php on line 31. in /var/www/vendor/yiisoft/yii2/web/Response.php:368
+Stack trace:
+#0 /var/www/vendor/yiisoft/yii2/web/Response.php(341): yii\web\Response->sendHeaders()
+#1 /var/www/vendor/yiisoft/yii2/base/Applicati" while reading upstream, client: 172.21.0.1, server: api.example.loc, request: "PUT /categories/1 HTTP/1.1", upstream: "fastcgi://172.21.0.3:9000", host: "api.example.loc"
+2022/05/14 00:24:43 [error] 8#8: *200 FastCGI sent in stderr: "PHP message: PHP Fatal error:  Cannot use yii\base\BaseObject as BaseObject because the name is already in use in /var/www/frontend/components/TreeComponent.php on line 6" while reading response header from upstream, client: 172.21.0.1, server: frontend.example.loc, request: "GET / HTTP/1.1", upstream: "fastcgi://172.21.0.3:9000", host: "frontend.example.loc"

@@ -1,0 +1,10 @@
+elastic/data/*
+!elastic/data/.gitkeep
+graylog/data/*
+!graylog/data/.gitkeep
+mongo/db/*
+!mongo/db/.gitkeep
+mysql/db/*
+!mysql/db/.gitkeep
+.ssh*
+!.ssh/.gitkeep
